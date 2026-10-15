@@ -53,7 +53,7 @@ node --check scripts/serve.mjs
 
 GitHub CI 在 Node.js 22 和 24 上执行测试与语法检查。数值测试覆盖公式、边界输入和模型关系；这些检查不代表浏览器兼容性、真实继电器或现场设备测试。
 
-当前版本的本地验证：22 项自动测试通过，并在桌面与窄屏浏览器检查了关键交互。验证范围见 [验证记录](docs/verification.md)；GitHub Actions 需要推送后运行。
+当前版本的本地验证：22 项自动测试通过，并在桌面与窄屏浏览器检查了关键交互。验证范围见 [验证记录](docs/verification.md)；远程 CI 状态以 [GitHub Actions 最新结果](https://github.com/weizhegu999-ui/gridlab-cn/actions) 为准。
 
 ## 默认实验
 
@@ -93,17 +93,15 @@ gridlab-cn/
 └─ LICENSE
 ```
 
-## 上传到 GitHub
+## 获取源码
 
-1. 在 GitHub 新建仓库，例如 `gridlab-cn`。项目已包含 README 和 LICENSE，创建远程仓库时可先保持为空。
-2. 项目交付目录已包含本地 `main` 分支和初始提交。关联远程仓库后推送；将地址替换为自己的仓库地址：
+[GitHub 仓库](https://github.com/weizhegu999-ui/gridlab-cn) 当前为私有仓库，需要获得授权后才能访问和克隆。
 
-   ```sh
-   git remote add origin https://github.com/YOUR-NAME/gridlab-cn.git
-   git push -u origin main
-   ```
-
-3. 如果使用的是不带 `.git` 的 ZIP 源码，先执行 `git init -b main`、`git add .`、`git commit -m "Initial GridLab release"`，再关联远程并推送。到仓库的 **Actions** 页面查看 CI 结果。也可以用 GitHub 网页上传源码，请确认 `.github/workflows/` 一并上传。
+```sh
+git clone https://github.com/weizhegu999-ui/gridlab-cn.git
+cd gridlab-cn
+node scripts/serve.mjs
+```
 
 ## 部署到 GitHub Pages
 
