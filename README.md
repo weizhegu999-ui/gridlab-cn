@@ -2,6 +2,8 @@
 
 一个面向电气专业学习的中文交互项目：调整参数，查看计算结果和图形，再用原创练习检查理解。使用原生 HTML、CSS、JavaScript ES modules，无第三方运行依赖，无需账号或后端服务。
 
+**[在线使用 GridLab](https://weizhegu999-ui.github.io/gridlab-cn/)** · 浏览器直接打开，无需安装。
+
 ![GridLab 实际运行界面](docs/preview.jpg)
 
 ## 可以做什么
@@ -95,7 +97,7 @@ gridlab-cn/
 
 ## 获取源码
 
-[GitHub 仓库](https://github.com/weizhegu999-ui/gridlab-cn) 当前为私有仓库，需要获得授权后才能访问和克隆。
+[GitHub 仓库](https://github.com/weizhegu999-ui/gridlab-cn) 已公开，可直接访问、下载或克隆。
 
 ```sh
 git clone https://github.com/weizhegu999-ui/gridlab-cn.git
@@ -109,7 +111,7 @@ node scripts/serve.mjs
 2. 打开 **Actions → Deploy GitHub Pages → Run workflow**，选择要发布的分支并运行。
 3. 部署完成后，使用 workflow 的 `github-pages` 环境链接访问网站。项目使用相对资源路径，可部署在仓库子路径下。
 
-Pages 工作流只在手动运行时部署。它将 `index.html`、`styles.css`、`src/`、`assets/`、`docs/` 复制到临时 `_site/` 再上传，不发布测试、脚本或 Git 元数据。仓库是否支持 Pages 取决于所用 GitHub 方案和仓库设置。
+Pages 工作流只在手动运行时部署。日后更新代码并推送到 GitHub 后，需再次打开 **Actions → Deploy GitHub Pages → Run workflow** 发布更新。它将 `index.html`、`styles.css`、`src/`、`assets/`、`docs/` 复制到临时 `_site/` 再上传，不发布测试、脚本或 Git 元数据。
 
 ## 许可
 
