@@ -1,0 +1,14 @@
+{
+  "name": "gridlab-cn",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "中文电气计算与保护实验室：三相功率、短路估算、反时限曲线与知识自测",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "node --test",
+    "check": "node --check src/app.js && node --check src/engineering.js && node --check src/questions.js && node --test"
+  },
+  "engines": { "node": ">=20" },
+  "license": "MIT"
+}
